@@ -170,21 +170,34 @@ a:focus {
 
   .navbar-nav {
     margin-left: auto;
-
-    .nav-item {
-
-      .nav-item.dropdown{
-        .dropdown-menu{
-          border-radius: 200000px;
+    .nav-item.dropdown{
+      .dropdown-menu{
+        background: #EBA082;
+        border: transparent;
+        color:white;
+        display: none;
+        opacity: 0;
+        transform: translateY(-100000px);
+        transition: all 0.8s ease; // Tr
+        .dropdown-item{
+          &:hover{
+            color: white;
+            background-color: transparent;
+          }
         }
-        &:hover{
-          .dropdown-menu{
-            display: block;
-            margin-top: 0; 
-          } 
-        }
-        
       }
+      &:hover{
+        .dropdown-menu{
+          display: block;
+          margin-top: 0; 
+          opacity: 1;            // Rends visible
+          transform: translateY(0); 
+        } 
+      }
+      
+    }
+    .nav-item {
+      
       .nav-link {
         padding: 5px 20px;
         color: $white;
