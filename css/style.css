@@ -32,7 +32,6 @@
 
 .service_section {
   background: #e6e9eb;
-  padding: 50px 0;
 }
 .service_section .heading_container h2 {
   font-size: 2.5rem;
@@ -47,7 +46,6 @@
   background: linear-gradient(180deg, #f06532, #2a2e30);
   border-radius: 10px;
   color: #f5f5f5;
-  padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -445,7 +443,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+  background: linear-gradient(180deg, #f06532, #2a2e30);
   color: #ffffff;
 }
 .about_section .heading_container {
