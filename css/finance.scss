@@ -1,0 +1,57 @@
+.finance-heading-container {
+    background-color: #004085;
+    color: white;
+    padding: 70px 0;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+.finance-heading-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.finance-heading-container p {
+    font-size: 1.2rem;
+    color: #cce5ff;
+}
+.finance-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.finance-card img {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
+}
+.finance-card-body {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+.finance-card-title {
+    font-size: 1.7rem;
+    color: #0056b3;
+    font-weight: bold;
+}
+.finance-card-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+.finance-btn-custom {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+.finance-btn-custom:hover {
+    background-color: #003366;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .finance-heading-container h2 {
+        font-size: 2rem;
+    }
+}
