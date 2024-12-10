@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import "./variables.scss";
 @import "./annotation.scss";
-@import "./service.scss";
-
-
+@import "./clean_data.scss";
+@import "./blog.scss";
+@import "./sante.scss";
+@import "./finance.scss";
+@import "./automobile.scss";
 
 @mixin main-font {
   font-family: "Cabinetgrotesk", sans-serif;
