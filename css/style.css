@@ -1,16 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-body {
-  font-family: "Cabinetgrotesk", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-
-.annotate{
+/* Appliquer une taille spécifique à toutes les images dans .custom-img */
+.annotate {
   padding-top: 100px;
 }
 
-/* Appliquer une taille spécifique à toutes les images dans .custom-img */
 .custom-img {
   width: 100%;
   height: 300px; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
@@ -27,16 +21,21 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Ombre plus forte au survol */
 }
 
-
 /* Si vous souhaitez une taille uniforme pour toutes les images, ajustez aussi la hauteur de la colonne */
 .annotate .col-md-6 .img-box {
   height: 300px; /* Assure que la colonne conserve la même hauteur */
 }
 
-.annotate_background{
+.annotate_background {
   background: #e6e9eb;
 }
 
+body {
+  font-family: "Cabinetgrotesk", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
 
 .layout_padding {
   padding: 90px 0;

@@ -7,7 +7,7 @@ $textCol: #1f1f1f;
 
 // import fonts - font-family: 'Open Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-
+@import "./annotation.scss";
 @mixin main-font {
   font-family: "Cabinetgrotesk", sans-serif;
 }
@@ -823,3 +823,5 @@ a:focus {
 }
 
 // end footer section
+
+
