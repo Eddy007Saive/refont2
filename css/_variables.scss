@@ -1,0 +1,37 @@
+// Variables pour les couleurs
+$bg: #e6e9eb;
+$white: #ffffff;
+$black: #000000;
+$primary1: #00bbf0;
+$primary2: #00204a;
+$textCol: #333333; // Couleur légèrement foncée pour le texte
+$textLight: #f5f5f5; // Texte clair pour contraster avec les arrière-plans sombres
+$orange: #f06532;
+$bleu: #2a2e30;
+$degraded: linear-gradient(180deg, $orange, $bleu);
+$primary-gradient: linear-gradient(90deg, $orange, $bleu);
+$background-gradient: radial-gradient(circle, $orange, $bleu);
+$button-gradient: linear-gradient(90deg, $primary1, $primary2);
+$hover-button-gradient: linear-gradient(90deg, $primary2, $primary1);
+$image-shadow: rgba(255, 255, 255, 0.6);
+$card-hover-shadow: rgba(0, 0, 0, 0.3);
+
+// Mixins pour les effets réutilisables
+@mixin glowing-effect($color) {
+  filter: drop-shadow(0px 5px 10px $color);
+}
+
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin card-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px $card-hover-shadow;
+  }
+}
+

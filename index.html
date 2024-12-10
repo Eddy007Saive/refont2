@@ -23,7 +23,9 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -32,6 +34,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+
   <!-- responsive style -->
   <link href="../css/responsive.css" rel="stylesheet" />
   <script type="text/javascript">
@@ -158,57 +161,99 @@
 
 
   <!-- service section -->
-
-  <section class="service_section py-5 text-light">
-    <div class="container">
-      <div class="heading_container text-center mb-5">
-        <h2 class="display-5 fw-bold">
-          Nos <span class="text-warning">Services</span>
-        </h2>
-        <p class="lead">
-          "Une solution complète pour chaque étape de votre projet IA."
-        </p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-lg service-card">
-            <div class="card-body text-center">
-              <img src="images/s1.png" alt="AI-Powered Data Entry" class="mb-4 img-fluid" width="80">
-              <h5 class="card-title fw-bold text-uppercase">AI-Powered Data Entry</h5>
+<!-- Service Section -->
+<section class="service_section py-5 text-light">
+  <div class="container">
+    <div class="heading_container text-center mb-5">
+      <h2 class="display-4 fw-bold text-gradient">
+        Une solution complète pour chaque étape de votre projet <span class="text-warning">IA</span>
+      </h2>
+      <p class="lead w-100">
+        Que vous soyez en phase de recherche, de développement ou de déploiement, nos experts vous accompagnent.
+      </p>
+    </div>
+    <div class="row g-4 mb-3">
+      <!-- First Row - Top Cards -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100 border-0 shadow-lg service-card bg-gradient">
+          <div class="card-body d-flex align-items-center">
+            <img src="images/collecte.png" alt="AI-Powered Data Entry" class="img-fluid glowing-img m" style="max-width: 120px;">
+            <div>
+              <h5 class="card-title fw-bold text-uppercase">Collecte de données</h5>
               <p class="card-text">
-                Automate your data entry processes with our advanced AI solutions, reducing errors and saving time across your operations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-lg service-card">
-            <div class="card-body text-center">
-              <img src="images/s2.png" alt="Secure Data Management" class="mb-4 img-fluid" width="80">
-              <h5 class="card-title fw-bold text-uppercase">Secure Data Management</h5>
-              <p class="card-text">
-                Our AI solutions ensure that your data is managed securely, with industry-standard encryption and protocols to protect your business information.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-lg service-card">
-            <div class="card-body text-center">
-              <img src="images/s3.png" alt="24/7 Expert Support" class="mb-4 img-fluid" width="80">
-              <h5 class="card-title fw-bold text-uppercase">24/7 Expert Support</h5>
-              <p class="card-text">
-                Our team of experts is available around the clock to help you integrate and manage our AI solutions, ensuring smooth operations.
+                Données textuelles, visuelles, audio, ou multi-modalité.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center mt-4">
-        <a href="service.html" class="btn btn-warning btn-lg text-dark fw-bold">Read More</a>
+      <div class="col-md-6 mb-3">
+        <div class="card h-100 border-0 shadow-lg service-card bg-gradient">
+          <div class="card-body d-flex align-items-center">
+            <img src="images/s2.png" alt="Secure Data Management" class="img-fluid glowing-img me-4" style="max-width: 120px;">
+            <div>
+              <h5 class="card-title fw-bold text-uppercase">Annotation avancée</h5>
+              <p class="card-text">
+                Étiquetage, segmentation, transcription, et plus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Row - Bottom Cards -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100 border-0 shadow-lg service-card bg-gradient">
+          <div class="card-body d-flex align-items-center">
+            <img src="images/s3.png" alt="24/7 Expert Support" class="img-fluid glowing-img me-4" style="max-width: 120px;">
+            <div>
+              <h5 class="card-title fw-bold text-uppercase">Nettoyage et enrichissement</h5>
+              <p class="card-text">
+                Préparation et structuration des données brutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="card h-100 border-0 shadow-lg service-card bg-gradient">
+          <div class="card-body d-flex align-items-center">
+            <img src="images/integration.png" alt="Custom Solutions" class="img-fluid glowing-img me-4" style="max-width: 120px;">
+            <div>
+              <h5 class="card-title fw-bold text-uppercase">Intégration de données</h5>
+              <p class="card-text">
+                Pipelines automatisés pour vos systèmes d’apprentissage.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="text-center mt-4">
+      <a href="service.html" class="btn btn-warning btn-lg fw-bold glowing-btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  <!-- <script>
+    gsap.registerPlugin(ScrollTrigger);
+  
+    gsap.from(".service-card", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".service_section",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+      }
+    });
+  </script> -->
+  
+  
   
 
   <!-- end service section -->
@@ -358,6 +403,35 @@
     loadINFO()
   </script>
   <script>
+    // Attendre que le DOM soit chargé
+document.addEventListener("DOMContentLoaded", () => {
+  // Sélectionner toutes les cartes de services
+  const serviceCards = document.querySelectorAll(".service-card");
+
+  // Activer GSAP pour chaque carte
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.fromTo(
+    serviceCards,
+    {
+      opacity: 0, // État initial (invisible)
+      y: 50, // Légèrement déplacé vers le bas
+    },
+    {
+      opacity: 1, // État final (visible)
+      y: 0, // À la position d'origine
+      duration: 1, // Durée de l'animation
+      stagger: 0.2, // Délai entre chaque carte
+      ease: "power3.out", // Courbe d'animation fluide
+      scrollTrigger: {
+        trigger: serviceCards, // Élément à surveiller
+        start: "top 80%", // Déclenche l'animation lorsque l'élément entre dans 80% de la fenêtre
+        end: "bottom 20%", // Fin de l'animation
+        toggleActions: "play none none reverse", // Déroulement/annulation
+      },
+    }
+  );
+});
+
     async function callFunction() {
         try {
             const response = await fetch('https://formation-9605a.web.app.cloudfunctions.net/helloWorld');
