@@ -1,0 +1,52 @@
+
+.subtitle-heading-container {
+    color: $orange;
+    padding: 70px 0;
+    border: $orange 1px solid;
+    margin: 50px 150px;
+  
+    // Pour les écrans moyens (tablettes)
+    @media (max-width: 768px) {
+      padding: 50px 20px;
+      margin: 30px 50px;
+    }
+  
+    // Pour les petits écrans (mobiles)
+    @media (max-width: 480px) {
+      padding: 30px 15px;
+      margin: 20px 15px;
+      font-size: 14px; // Optionnel : ajuster la taille du texte
+    }
+  }
+  
+
+  .subtitle-heading-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  
+    // Responsive pour tablettes
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  
+    // Responsive pour mobiles
+    @media (max-width: 480px) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .subtitle-heading-container p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  
+    // Responsive pour tablettes
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  
+    // Responsive pour mobiles
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
+    }
+  }
+  
