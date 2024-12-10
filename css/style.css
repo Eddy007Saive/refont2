@@ -30,10 +30,49 @@
   background: #e6e9eb;
 }
 
+.service_section {
+  background: #e6e9eb;
+  padding: 50px 0;
+}
+.service_section .heading_container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+.service_section .heading_container p {
+  font-size: 1.25rem;
+  color: #333333;
+}
+.service_section .service-card {
+  background: linear-gradient(180deg, #f06532, #2a2e30);
+  border-radius: 10px;
+  color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service_section .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.service_section .service-card img {
+  filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.5));
+}
+.service_section .service-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.service_section .service-card .card-text {
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
 body {
   font-family: "Cabinetgrotesk", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #e6e9eb;
   overflow-x: hidden;
 }
 
@@ -130,7 +169,7 @@ a:focus {
 
 .sub_page .hero_area {
   min-height: auto;
-  background: linear-gradient(180deg, #EBA082, #022553);
+  background: linear-gradient(180deg, #f06532, #2a2e30);
 }
 .sub_page .hero_area .hero_bg_box {
   display: none;
