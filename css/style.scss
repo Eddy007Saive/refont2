@@ -7,6 +7,11 @@
 @import "./sante.scss";
 @import "./finance.scss";
 @import "./automobile.scss";
+@import "./service.scss";
+@import "./slider.scss";
+
+
+
 
 @mixin main-font {
   font-family: "Cabinetgrotesk", sans-serif;
@@ -34,7 +39,7 @@
 body {
   @include main-font;
   color: #0c0c0c;
-  background-color: $bg;
+  background: $bg;
   overflow-x: hidden;
 }
 
@@ -139,7 +144,7 @@ a:focus {
 .sub_page {
   .hero_area {
     min-height: auto;
-    background: $degraded;
+    background: $background-gradient;
 
     .hero_bg_box {
       display: none;
@@ -824,4 +829,45 @@ a:focus {
 
 // end footer section
 
+// General styling for the section
+#why-choose-databoost {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+// Styling for the icon boxes
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+// Styling for the icons
+.icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-right: 15px;
+}
+
+// Styling for the text content
+.text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  color: #666;
+}
 
