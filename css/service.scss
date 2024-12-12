@@ -50,5 +50,9 @@ $degraded: linear-gradient(180deg, $orange, $bleu);
       font-size: 1rem;
       color: $textLight;
     }
+
+    .btn{
+      background-color: $primary1;
+    }
   }
 }

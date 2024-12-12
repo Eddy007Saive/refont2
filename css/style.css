@@ -295,6 +295,9 @@
   font-size: 1rem;
   color: #f5f5f5;
 }
+.service_section .service-card .btn {
+  background-color: #00bbf0;
+}
 
 .carousel.slide2 .client {
   padding: 1em;
