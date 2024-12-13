@@ -23,7 +23,7 @@ $blue-dark: #001f3f;   // Une teinte de bleu très sombre
 // $orange-light: #e07a5f; // Une teinte d'orange claire et chaleureuse
 $orange-light: #b63a0d; // Une teinte d'orange claire et chaleureuse
 
-$background-site: radial-gradient(circle, $orange-light, $blue-dark);
+$background-site: radial-gradient(circle, $blue-dark, $orange-light);
 
 // Mixins pour les effets réutilisables
 @mixin glowing-effect($color) {
