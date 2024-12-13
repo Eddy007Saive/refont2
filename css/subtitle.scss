@@ -16,9 +16,7 @@
     display: inline;
   }
 
-  p {
-    color: $paragraph;
-  }
+
 
   // Pour les écrans moyens (tablettes)
   @media (max-width: 768px) {
@@ -64,4 +62,10 @@
     color: $paragraph;
   }
 
+}
+
+.title{
+  font-weight: bold; /* Mettre le texte en gras pour plus de visibilité */
+  color: $subtitle;
+  display: inline; /* Permet au texte de s'afficher en ligne */
 }

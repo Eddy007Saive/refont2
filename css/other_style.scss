@@ -7,3 +7,31 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.limited-text2{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limite à 3 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.limited-text3{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Limite à 3 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.limited-text4{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Limite à 3 lignes */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

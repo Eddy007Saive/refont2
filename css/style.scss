@@ -578,7 +578,7 @@ a:focus {
 
 .team_section {
   text-align: center;
-  background-color: $primary2;
+  background-color: $background-site;
   color: $white;
 
   .heading_container {
@@ -595,7 +595,8 @@ a:focus {
       transition: all .1s;
       margin-top: 45px;
       // background-color: #053068;
-      background: linear-gradient(to bottom, lighten($color: $primary2, $amount: 3), lighten($color: $primary2, $amount: 5));
+      background: rgb(225, 225, 225,0.1);
+      border: 1px solid #fff;
 
       .img-box {
         display: flex;
@@ -618,6 +619,10 @@ a:focus {
           font-weight: 600;
           position: relative;
         }
+        p{
+          color: $paragraph;
+        }
+       
 
       }
 
@@ -629,6 +634,9 @@ a:focus {
         a {
           color: $white;
           font-size: 22px;
+          i{
+            color: $primary1;
+          }
 
           &:hover {
             color: $primary1;
@@ -874,19 +882,19 @@ a:focus {
                 justify-content: center;
                 margin-top: 10%;
 
-                h3 {
-                  font-size: 2rem; // Taille ajustée
-                  /* Taille de police */
-                  font-weight: bold;
-                  /* Gras pour une meilleure visibilité */
-                  background: $title;
-                  /* Dégradé du rouge-orange au jaune orangé */
-                  -webkit-background-clip: text;
-                  /* Applique le dégradé au texte */
-                  color: transparent;
-                  /* Rend le texte transparent pour que le dégradé soit visible */
-                  display: inline;
-                }
+                // h3 {
+                //   font-size: 2rem; // Taille ajustée
+                //   /* Taille de police */
+                //   font-weight: bold;
+                //   /* Gras pour une meilleure visibilité */
+                //   background: $title;
+                //   /* Dégradé du rouge-orange au jaune orangé */
+                //   -webkit-background-clip: text;
+                //   /* Applique le dégradé au texte */
+                //   color: transparent;
+                //   /* Rend le texte transparent pour que le dégradé soit visible */
+                //   display: inline;
+                // }
 
                 p {
                   text-align: justify;

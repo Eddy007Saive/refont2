@@ -1,12 +1,19 @@
-.blog-header {
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-.blog-post {
-    margin-bottom: 20px;
-}
+.blog-content{
+    .card {
+        border: 1px solid #fff;
+        background: transparent;
+    }
+    
+    .card-title {
+        color: #fff;
+    }
+    
+    .card-img-top {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
 
-.blog-image {
-    max-width: 100%;
-    height: auto;
+    .card-text{
+        color: $paragraph;
+    }
+
 }
