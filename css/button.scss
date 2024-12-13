@@ -13,3 +13,23 @@
     transform: scale(1.05); /* Agrandissement du bouton au survol */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
 }
+
+
+.btn-link-blok {
+    color: #00bbf0; /* Link color */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 12px 25px; /* Internal spacing */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Hand cursor */
+    text-decoration: underline; /* Underline the text */
+    display: inline-block; /* Allow it to act like an inline element */
+    box-shadow: none; /* Remove box-shadow for link style */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect for hover */
+}
+
+.btn-link-blok:hover {
+    color: #00bbf0;
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
