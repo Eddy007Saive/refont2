@@ -1,0 +1,67 @@
+//titre encadree
+.subtitle-heading-container {
+  
+  padding: 70px 0;
+  margin: 0;
+  h2 {
+    /* Taille de police */
+    font-weight: bold;
+    /* Gras pour une meilleure visibilité */
+    background: $title;
+    /* Dégradé du rouge-orange au jaune orangé */
+    -webkit-background-clip: text;
+    /* Applique le dégradé au texte */
+    color: transparent;
+    /* Rend le texte transparent pour que le dégradé soit visible */
+    display: inline;
+  }
+
+  p {
+    color: $paragraph;
+  }
+
+  // Pour les écrans moyens (tablettes)
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+    margin: 30px 50px;
+  }
+
+  // Pour les petits écrans (mobiles)
+  @media (max-width: 480px) {
+    padding: 30px 15px;
+    margin: 20px 15px;
+    font-size: 14px; // Optionnel : ajuster la taille du texte
+  }
+}
+
+
+
+
+.subtitle-heading-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  // Responsive pour tablettes
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  // Responsive pour mobiles
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+.subtitle {
+  h3{
+    font-weight: bold; /* Mettre le texte en gras pour plus de visibilité */
+    color: $subtitle;
+    display: inline; /* Permet au texte de s'afficher en ligne */
+  }
+  p{
+    color: $paragraph;
+  }
+
+}

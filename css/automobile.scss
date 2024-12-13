@@ -1,5 +1,5 @@
 .auto-header {
-    background-color: #343a40;
+    background: #343a40;
     color: white;
     padding: 80px 0;
     border-radius: 12px;
@@ -29,20 +29,12 @@
     padding: 20px;
     border-radius: 0 0 15px 15px;
 }
-.auto-card-title {
-    font-size: 1.7rem;
-    color: #007bff;
-    font-weight: bold;
-}
 .auto-card-subtitle {
     font-size: 1.1rem;
     color: #6c757d;
     font-weight: normal;
 }
-.auto-card-text {
-    font-size: 1.1rem;
-    color: #6c757d;
-}
+
 .auto-btn-custom {
     background-color: #007bff;
     color: white;

@@ -51,93 +51,174 @@
         <!-- end header section -->
     </div>
 
-    <section class="annotate_background py-5">
+    <section class="mb-5">
+        <section class="subtitle-heading-container text-center">
+            <div class="container">
+                <h2 class="mb-3">
+                    Data <span>Cleaning</span>
+                </h2>
+                <p class="mb-4">
+                    Data cleaning is an essential process where we identify and correct errors, inconsistencies, or
+                    missing values in a dataset. This process helps improve the quality of the data before using it in
+                    AI models, ensuring precise and reliable results.
+                </p>
+            </div>
+        </section>
         <div class="container">
-            <div class="heading_container heading_center annotate mb-5 d-flex justify-content-center align-items-center ">
-                <div class="text-center">
-                    <h2>
-                        Nettoyage de <span>données</span>
-                    </h2>
-                    <p class="mt-4 text-muted">
-                        Le nettoyage des données est un processus essentiel qui consiste à identifier et corriger les erreurs, les incohérences ou les valeurs manquantes dans un ensemble de données. Ce processus permet d'améliorer la qualité des données avant leur utilisation dans des modèles d'IA, afin de garantir des résultats précis et fiables.
-                    </p>
-                    <p class="mt-3 text-muted">
-                        Par exemple, cela peut inclure la suppression des doublons, le remplissage des valeurs manquantes, ou la correction des erreurs de formatage. Le nettoyage des données est crucial pour éviter que des informations incorrectes ou incohérentes ne biaisent les modèles d'IA et entraînent des prédictions erronées.
-                    </p>
-                </div>
-            </div>            
-    
-            <!-- Nettoyage d'image -->
-            <div class="row mb-4 annotate text-light align-items-center">
+            <!-- Missing Data Cleaning -->
+            <div class="row mb-1 annotate align-items-center">
                 <div class="col-md-6 col-12">
-                    <div class="img-box">
-                        <img src="images/pexels-pixabay-256381.jpg" alt="Cleaning image" class="custom-img img-fluid polygon-img">
-                    </div>
+                    <img src="images/clean_1.png" alt="Missing data cleaning"
+                        class="  round-custom-img img-fluid">
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="detail-box text-muted">
-                        <h3 class="text-primary">À propos du nettoyage d'image</h3>
-                        <p>
-                            Le nettoyage d'image consiste à éliminer les imperfections et à corriger les erreurs dans les images. Cela inclut la suppression du bruit, la correction des couleurs ou des contrastes, et l'amélioration de la qualité de l'image pour que les modèles d'IA puissent mieux analyser et comprendre les données.
-                        </p>
-                    </div>
+                <div class="col-md-6 col-12 subtitle">
+                    <h3>Missing Data Cleaning</h3>
+                    <p>
+                        We handle missing values in a dataset by either removing them or imputing them with mean,
+                        median, or other statistical techniques. This process ensures that incomplete data does not
+                        hinder analysis or model performance.
+                    </p>
                 </div>
             </div>
-            
-            <!-- Nettoyage vidéo -->
-            <div class="row mb-4 annotate align-items-center">
-                <div class="col-md-6 col-12 order-md-1 order-2">
-                    <div class="detail-box text-muted">
-                        <h3 class="text-primary">À propos du nettoyage vidéo</h3>
-                        <p>
-                            Le nettoyage vidéo implique la suppression des artefacts, la stabilisation de l'image et la correction des erreurs dans les séquences vidéo. Ce processus est essentiel pour garantir que les vidéos soient de bonne qualité avant leur utilisation dans des modèles d'IA pour l'analyse et la reconnaissance.
-                        </p>
-                    </div>
+
+            <!-- Data Entry Error Correction -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12 order-md-1 order-2 subtitle">
+                    <h3>Data Entry Error Correction</h3>
+                    <p>
+                        We detect and correct data entry errors such as typos or formatting mistakes. This ensures that
+                        the dataset is accurate and reliable for analysis and machine learning tasks.
+                    </p>
                 </div>
                 <div class="col-md-6 col-12 order-md-2 order-1">
-                    <div class="img-box">
-                        <img src="images/pexels-donaldtong94-66134.jpg" alt="Cleaning video" class="custom-img img-fluid polygon-img">
-                    </div>
+                    <img src="images/clean_2.png" alt="Data entry error correction"
+                        class="  round-custom-img img-fluid ">
                 </div>
             </div>
-    
-            <!-- Nettoyage audio -->
-            <div class="row mb-4 annotate text-light align-items-center">
+
+            <!-- Data Standardization -->
+            <div class="row mb-1 annotate align-items-center">
                 <div class="col-md-6 col-12">
-                    <div class="img-box">
-                        <img src="images/pexels-pixabay-257904.jpg" alt="Cleaning audio" class="custom-img img-fluid polygon-img">
-                    </div>
+                    <img src="images/clean_3.png" alt="Data standardization" class="  round-custom-img img-fluid">
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="detail-box text-muted">
-                        <h3 class="text-primary">À propos du nettoyage audio</h3>
-                        <p>
-                            Le nettoyage audio consiste à éliminer le bruit de fond, à améliorer la clarté du son et à corriger les distorsions audio. Cela garantit que les modèles d'IA puissent analyser avec précision les données audio sans être influencés par des interférences indésirables.
-                        </p>
-                    </div>
+                <div class="col-md-6 col-12 subtitle">
+                    <h3>Data Standardization</h3>
+                    <p>
+                        We standardize data to ensure consistency in format. For example, dates may be standardized to
+                        the YYYY-MM-DD format, or monetary values may be converted to a single currency to maintain
+                        uniformity across datasets.
+                    </p>
                 </div>
             </div>
-    
-            <!-- Nettoyage 3D -->
-            <div class="row mb-4 annotate align-items-center">
-                <div class="col-md-6 col-12 order-md-1 order-2">
-                    <div class="detail-box text-muted">
-                        <h3 class="text-primary">À propos du nettoyage 3D</h3>
-                        <p>
-                            Le nettoyage 3D comprend la correction des imperfections dans des modèles tridimensionnels, comme les erreurs de maillage, les artefacts ou les surfaces irrégulières. Cela permet d'améliorer la précision des simulations et des rendus utilisés dans des applications de réalité virtuelle et de modélisation 3D.
-                        </p>
-                    </div>
+
+            <!-- Duplicate Removal -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12 order-md-1 order-2 subtitle">
+                    <h3>Duplicate Removal</h3>
+                    <p>
+                        We remove duplicate records to avoid biases in analysis. This process includes eliminating
+                        identical rows or duplicate entries, ensuring the dataset is clean and accurate.
+                    </p>
                 </div>
                 <div class="col-md-6 col-12 order-md-2 order-1">
-                    <div class="img-box">
-                        <img src="images/pexels-rostislav-5011647.jpg" alt="Cleaning 3D" class="custom-img img-fluid polygon-img">
-                    </div>
+                    <img src="images/clean_4.png" alt="Duplicate removal" class="  round-custom-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Outlier Filtering -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12 ">
+                    <img src="images/clean_1.png" alt="Outlier filtering" class="  round-custom-img img-fluid">
+                </div>
+                <div class="col-md-6 col-12 subtitle">
+                    <h3>Outlier Filtering</h3>
+                    <p>
+                        We filter out extreme or outlier values that do not align with expectations. This prevents these
+                        values from distorting analysis and ensures the data is representative.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Data Transformation -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12 order-md-1 order-2 subtitle">
+                    <h3>Data Transformation</h3>
+                    <p>
+                        We transform data by converting it into suitable formats, such as normalizing values to ensure
+                        they are on the same scale or applying dimensionality reduction techniques to improve the
+                        performance of machine learning models.
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 order-md-2 order-1">
+                    <img src="images/clean_1.png" alt="Data transformation" class="  round-custom-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Data Enrichment -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12">
+                    <img src="images/clean_1.png" alt="Data enrichment" class="  round-custom-img img-fluid">
+                </div>
+                <div class="col-md-6 col-12 subtitle">
+                    <h3>Data Enrichment</h3>
+                    <p>
+                        We enrich datasets by adding new information from external sources to improve their quality and
+                        completeness. This additional data enhances the value of the dataset for analysis.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Data Validation -->
+            <div class="row mb-1 annotate align-items-center">
+               
+                <div class="col-md-6 col-12 order-md-1 order-2 subtitle">
+                    <h3>Data Validation</h3>
+                    <p>
+                        We validate the data to ensure it follows logical rules and constraints, such as acceptable
+                        value ranges or relationships between different variables. This step ensures the integrity of
+                        the data before further use.
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 order-md-2 order-1">
+                    <img src="images/clean_1.png" alt="Data validation" class="  round-custom-img img-fluid">
+                </div>
+            </div>
+
+            <!-- Inconsistent Data Removal -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12">
+                    <img src="images/clean_1.png" alt="Inconsistent data removal"
+                        class="  round-custom-img img-fluid">
+                </div>
+                <div class="col-md-6 col-12 subtitle">
+                    <h3>Inconsistent Data Removal</h3>
+                    <p>
+                        We remove inconsistent data that is illogical or does not make sense within a given context.
+                        This ensures that the dataset is coherent and usable for further analysis or model training.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Text Data Cleaning -->
+            <div class="row mb-1 annotate align-items-center">
+                <div class="col-md-6 col-12 order-md-1 order-2 subtitle">
+                    <h3>Text Data Cleaning</h3>
+                    <p>
+                        We clean text data by eliminating typographical errors, special characters, or unnecessary words
+                        (such as stop words). This ensures that the text is clean and ready for natural language
+                        processing and analysis.
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 order-md-2 order-1">
+                    <img src="images/clean_1.png" alt="Text data cleaning" class="  round-custom-img img-fluid">
                 </div>
             </div>
         </div>
+
     </section>
 
-    
+
+
 
     <!-- end about section -->
 
