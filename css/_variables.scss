@@ -10,7 +10,7 @@ $orange: #f06532;
 $bleu: #2a2e30;
 $degraded: linear-gradient(180deg, $orange, $bleu);
 $primary-gradient: linear-gradient(90deg, $orange, $bleu);
-$background-gradient: radial-gradient(circle, $orange, $bleu);
+$background-gradient: radial-gradient(circle, $bleu, $orange);
 $button-gradient: linear-gradient(90deg, $primary1, $primary2);
 $hover-button-gradient: linear-gradient(90deg, $primary2, $primary1);
 $image-shadow: rgba(255, 255, 255, 0.6);

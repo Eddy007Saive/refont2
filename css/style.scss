@@ -11,6 +11,11 @@
 @import "./fond.scss";
 @import "./other_style.scss";
 
+@import "./service.scss";
+@import "./slider.scss";
+
+
+
 
 @mixin main-font {
   font-family: "Cabinetgrotesk", sans-serif;
@@ -38,7 +43,7 @@
 body {
   @include main-font;
   color: #0c0c0c;
-  background-color: $bg;
+  background: $bg;
   overflow-x: hidden;
 }
 
@@ -143,7 +148,7 @@ a:focus {
 .sub_page {
   .hero_area {
     min-height: auto;
-    background: $degraded;
+    background: $background-gradient;
 
     .hero_bg_box {
       display: none;
@@ -827,4 +832,5 @@ a:focus {
 }
 
 // end footer section
+
 

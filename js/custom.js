@@ -1,4 +1,61 @@
-// to get current year
+function initializeCarousel(carousel,item, visibleCards = 4, autoScrollInterval = 3000) {
+  var $carousel = $(carousel);
+  var carouselWidth = $carousel[0].scrollWidth;
+  var $card = $carousel.find(item);
+  var cardWidth = $card.width();
+  var scrollPosition = 0;
+
+  // Fonction pour faire défiler automatiquement
+  function autoScroll() {
+      if (scrollPosition < (carouselWidth - cardWidth * visibleCards)) { // Vérifie si on peut faire défiler plus loin
+          scrollPosition += cardWidth;  // Met à jour la position de défilement
+          $carousel.animate({ scrollLeft: scrollPosition }, 600); // Défile vers la gauche
+      } else {
+          scrollPosition = 0; // Réinitialise la position à zéro
+          $carousel.animate({ scrollLeft: scrollPosition }, 600); // Recommence au début
+      }
+  }
+
+  // Lancer le défilement automatique toutes les n millisecondes
+  var autoScrollTimer = setInterval(autoScroll, autoScrollInterval);
+
+  // Contrôles manuels
+  $carousel.siblings(".carousel-control-next").on("click", function () {
+      if (scrollPosition < (carouselWidth - cardWidth * visibleCards)) {
+          scrollPosition += cardWidth;
+          $carousel.animate({ scrollLeft: scrollPosition }, 600);
+      }
+  });
+
+  $carousel.siblings(".carousel-control-prev").on("click", function () {
+      if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $carousel.animate({ scrollLeft: scrollPosition }, 600);
+      }
+  });
+
+  // Arrêter l'auto-défilement si l'utilisateur interagit avec les contrôles
+  $carousel.siblings(".carousel-control-next, .carousel-control-prev").on("click", function () {
+      clearInterval(autoScrollTimer);
+  });
+
+  return {
+      stopAutoScroll: function () {
+          clearInterval(autoScrollTimer);
+      },
+      startAutoScroll: function () {
+          autoScrollTimer = setInterval(autoScroll, autoScrollInterval);
+      }
+  };
+}
+
+// Exemple d'utilisation :
+initializeCarousel(".client",".client-item", 2, 3000);
+initializeCarousel(".client2",".client-item2", 2, 4000);
+
+
+
+
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
