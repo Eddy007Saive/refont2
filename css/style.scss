@@ -42,7 +42,7 @@
 body {
   @include main-font;
   color: #0c0c0c;
-  background: $bg;
+  background: $background-site;
   overflow-x: hidden;
 }
 
@@ -147,7 +147,7 @@ a:focus {
 .sub_page {
   .hero_area {
     min-height: auto;
-    background: $background-gradient;
+    // background: $background-gradient;
 
     .hero_bg_box {
       display: none;
@@ -448,7 +448,7 @@ a:focus {
         text-transform: uppercase;
       }
 
-      
+
 
       a {
         color: $primary2;
@@ -868,15 +868,23 @@ a:focus {
 
                 h3 {
                   font-size: 2rem; // Taille ajustée
+                  /* Taille de police */
                   font-weight: bold;
-                  color: #333; // Couleur personnalisée
+                  /* Gras pour une meilleure visibilité */
+                  background: $title;
+                  /* Dégradé du rouge-orange au jaune orangé */
+                  -webkit-background-clip: text;
+                  /* Applique le dégradé au texte */
+                  color: transparent;
+                  /* Rend le texte transparent pour que le dégradé soit visible */
+                  display: inline;
                 }
 
                 p {
                   text-align: justify;
                   font-size: 1rem; // Taille ajustée
                   line-height: 1.8;
-                  color: #555; // Couleur personnalisée
+                  color: $textLight; // Couleur personnalisée
                   margin-bottom: 2rem;
                 }
               }
