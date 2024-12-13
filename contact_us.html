@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+
+    <title> Databoost </title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body >
+
+   
+        <!-- header section strats -->
+        <div id="header"></div>
+        <main class="py-5">
+            <section class="contact-us">
+                <div class="container-fluid text-white  d-flex justify-content-center ">
+                        <div class="col-md-6  shadow p-3 border-white ">
+                            <h2>Contactez-nous</h2>
+                            <p>Des questions sur nos services de création de jeux de données ? Contactez-nous facilement en remplissant le formulaire ci-dessous. Notre équipe d'experts est à votre écoute et vous répondra dans les plus brefs délais pour vous accompagner dans vos projets IA.</p>
+    
+                            <form action="submit_contact.php" method="post" class="contact-form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Votre Nom et Prénom :</label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom complet" required>
+                                </div>
+    
+                                <div class="mb-3">
+                                    <label for="company" class="form-label">Votre Entreprise :</label>
+                                    <input type="text" id="company" name="company" class="form-control" placeholder="Votre entreprise">
+                                </div>
+    
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Votre Email :</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                                </div>
+    
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Votre Message :</label>
+                                    <textarea id="message" name="message" rows="5" class="form-control" placeholder="Décrivez la mission que vous souhaitez nous confier..." required></textarea>
+                                </div>
+    
+                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                            </form>
+                        </div>
+                </div>
+            </section>
+        </main>
+   
+    <!-- info section  -->
+    <div id="info"></div>
+    <!-- end info section -->
+
+
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+    <script>
+        loadHEADER("home-nav")
+        loadINFO();
+    </script>
+
+</body>
+
+</html>

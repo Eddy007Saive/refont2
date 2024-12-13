@@ -515,6 +515,15 @@ a:focus {
 // why section
 
 .why_section {
+  .card {
+    background-color: rgb(255, 255, 255, 0.3);
+    border: 1px solid $orange;
+    color: #ffffff;
+    -webkit-box-shadow: -15px -9px 55px -8px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: -15px -9px 55px -8px rgba(0, 0, 0, 0.82);
+    box-shadow: -15px -9px 55px -8px rgba(0, 0, 0, 0.82);
+    border-radius: 10px;
+  }
 
   .box {
     margin-top: 45px;
