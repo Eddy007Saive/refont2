@@ -1,0 +1,76 @@
+//ANNOTATION DONNEES
+
+/* Appliquer une taille spécifique à toutes les images dans .custom-img */
+
+.annotate {
+  padding-top: 100px;
+}
+
+.custom-img {
+  width: 100%;
+  height: 300px;
+  /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+  object-fit: cover;
+  /* Cela permet à l'image de remplir la zone définie sans déformation */
+  object-position: center;
+  /* Centre l'image si elle est plus grande que le conteneur */
+  border: 3px solid #ddd;
+  /* Couleur de bordure subtile */
+  border-radius: 12px;
+  /* Coins arrondis */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation au survol */
+}
+
+.custom-img:hover {
+  transform: scale(1.05);
+  /* Agrandir légèrement au survol */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  /* Ombre plus forte au survol */
+}
+
+
+/* Si vous souhaitez une taille uniforme pour toutes les images, ajustez aussi la hauteur de la colonne */
+.annotate .col-md-6 .img-box {
+  height: 300px;
+  /* Assure que la colonne conserve la même hauteur */
+}
+
+.annotate_background {
+  background: $bg;
+}
+
+
+.annotate-heading-container {
+  background: $orange;
+  color: white;
+  padding: 70px 0;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+
+
+.round-custom-img:hover {
+  transform: scale(1.05);
+  /* Agrandir légèrement au survol */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  /* Ombre plus forte au survol */
+}
+
+
+  .round-custom-img {
+    display: block;         /* Assure que l'image est un élément de type block */
+    margin-left: auto;      /* Centre l'image horizontalement */
+    margin-right: auto;     /* Centre l'image horizontalement */
+    width: 50%;             /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+    height: 200px;          /* Hauteur de l'image */
+    object-fit: cover;      /* Cela permet à l'image de remplir la zone définie sans déformation */
+    object-position: center; /* Centre l'image si elle est plus grande que le conteneur */
+    border: 3px solid #ddd; /* Couleur de bordure subtile */
+    border-radius: 50%;     /* Transforme l'image en cercle */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  }

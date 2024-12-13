@@ -15,6 +15,15 @@ $button-gradient: linear-gradient(90deg, $primary1, $primary2);
 $hover-button-gradient: linear-gradient(90deg, $primary2, $primary1);
 $image-shadow: rgba(255, 255, 255, 0.6);
 $card-hover-shadow: rgba(0, 0, 0, 0.3);
+$subtitle : #fea975;
+$paragraph : #fff;
+$title : linear-gradient(45deg, #ff7e5f, #feb47b);
+
+$blue-dark: #001f3f;   // Une teinte de bleu très sombre
+// $orange-light: #e07a5f; // Une teinte d'orange claire et chaleureuse
+$orange-light: #b63a0d; // Une teinte d'orange claire et chaleureuse
+
+$background-site: radial-gradient(circle, $orange-light, $blue-dark);
 
 // Mixins pour les effets réutilisables
 @mixin glowing-effect($color) {

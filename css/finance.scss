@@ -16,31 +16,6 @@
     border-radius: 0 0 15px 15px;
 }
 
-.finance-card-title {
-    color: #18191a;
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-.finance-card-text {
-    font-size: 1.1rem;
-    color: #606264;
-}
-.finance-btn-custom {
-    background: linear-gradient(to right, #ff7f00, #e65c00); /* dégradé orange */
-    color: white;
-    border-radius: 25px;
-    padding: 12px 30px;
-    transition: all 0.3s ease;
-    border: none; /* Optionnel, si vous ne voulez pas de bordure */
-}
-
-.finance-btn-custom:hover {
-    background: linear-gradient(to right, #e65c00, #ff7f00); /* dégradé inversé au survol */
-    transform: scale(1.05); /* Agrandir légèrement au survol */
-}
-
-
 @media (max-width: 768px) {
     .finance-heading-container h2 {
         font-size: 2rem;

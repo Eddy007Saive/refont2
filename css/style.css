@@ -7,66 +7,66 @@
 
 .custom-img {
   width: 100%;
-  height: 300px; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
-  object-fit: cover; /* Cela permet à l'image de remplir la zone définie sans déformation */
-  object-position: center; /* Centre l'image si elle est plus grande que le conteneur */
-  border: 3px solid #ddd; /* Couleur de bordure subtile */
-  border-radius: 12px; /* Coins arrondis */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  height: 300px;
+  /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+  object-fit: cover;
+  /* Cela permet à l'image de remplir la zone définie sans déformation */
+  object-position: center;
+  /* Centre l'image si elle est plus grande que le conteneur */
+  border: 3px solid #ddd;
+  /* Couleur de bordure subtile */
+  border-radius: 12px;
+  /* Coins arrondis */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Animation au survol */
 }
 
 .custom-img:hover {
-  transform: scale(1.05); /* Agrandir légèrement au survol */
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Ombre plus forte au survol */
+  transform: scale(1.05);
+  /* Agrandir légèrement au survol */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  /* Ombre plus forte au survol */
 }
 
 /* Si vous souhaitez une taille uniforme pour toutes les images, ajustez aussi la hauteur de la colonne */
 .annotate .col-md-6 .img-box {
-  height: 300px; /* Assure que la colonne conserve la même hauteur */
+  height: 300px;
+  /* Assure que la colonne conserve la même hauteur */
 }
 
 .annotate_background {
   background: #e6e9eb;
 }
 
-.service_section {
-  background: #e6e9eb;
-  padding: 50px 0;
+.annotate-heading-container {
+  background: #f06532;
+  color: white;
+  padding: 70px 0;
+  border-radius: 12px;
+  margin-bottom: 50px;
 }
-.service_section .heading_container h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333333;
+
+.round-custom-img:hover {
+  transform: scale(1.05);
+  /* Agrandir légèrement au survol */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  /* Ombre plus forte au survol */
 }
-.service_section .heading_container p {
-  font-size: 1.25rem;
-  color: #333333;
-}
-.service_section .service-card {
-  background: linear-gradient(180deg, #f06532, #2a2e30);
-  border-radius: 10px;
-  color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.service_section .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.service_section .service-card img {
-  filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.5));
-}
-.service_section .service-card .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.service_section .service-card .card-text {
-  font-size: 1rem;
-  color: #f5f5f5;
+
+.round-custom-img {
+  display: block; /* Assure que l'image est un élément de type block */
+  margin-left: auto; /* Centre l'image horizontalement */
+  margin-right: auto; /* Centre l'image horizontalement */
+  width: 50%; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+  height: 200px; /* Hauteur de l'image */
+  object-fit: cover; /* Cela permet à l'image de remplir la zone définie sans déformation */
+  object-position: center; /* Centre l'image si elle est plus grande que le conteneur */
+  border: 3px solid #ddd; /* Couleur de bordure subtile */
+  border-radius: 50%; /* Transforme l'image en cercle */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
 }
 
 /* Appliquer une forme hexagonale à l'image */
@@ -89,78 +89,6 @@
   height: auto;
 }
 
-.sante-header {
-  background-color: #0044cc;
-  color: white;
-  padding: 80px 0;
-  border-radius: 12px;
-  margin-bottom: 50px;
-}
-
-.sante-header h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.sante-header p {
-  font-size: 1.1rem;
-  color: #e1f5fe;
-}
-
-.sante-card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.sante-card img {
-  border-radius: 15px;
-  object-fit: cover;
-  height: 100%;
-}
-
-.sante-card-body {
-  background-color: white;
-  padding: 20px;
-  border-radius: 0 0 15px 15px;
-}
-
-.sante-card-title {
-  font-size: 1.7rem;
-  color: #007bff;
-  font-weight: bold;
-}
-
-.sante-card-subtitle {
-  font-size: 1.1rem;
-  color: #6c757d;
-  font-weight: normal;
-}
-
-.sante-card-text {
-  font-size: 1.1rem;
-  color: #6c757d;
-}
-
-.sante-btn-custom {
-  background-color: #007bff;
-  color: white;
-  border-radius: 25px;
-  padding: 12px 30px;
-  transition: all 0.3s ease;
-}
-
-.sante-btn-custom:hover {
-  background-color: #0056b3;
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .sante-header h2 {
-    font-size: 2rem;
-  }
-}
 .finance-card {
   border: none;
   border-radius: 15px;
@@ -178,31 +106,6 @@
   background-color: white;
   padding: 20px;
   border-radius: 0 0 15px 15px;
-}
-
-.finance-card-title {
-  color: #18191a;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-.finance-card-text {
-  font-size: 1.1rem;
-  color: #606264;
-}
-
-.finance-btn-custom {
-  background: linear-gradient(to right, #ff7f00, #e65c00); /* dégradé orange */
-  color: white;
-  border-radius: 25px;
-  padding: 12px 30px;
-  transition: all 0.3s ease;
-  border: none; /* Optionnel, si vous ne voulez pas de bordure */
-}
-
-.finance-btn-custom:hover {
-  background: linear-gradient(to right, #e65c00, #ff7f00); /* dégradé inversé au survol */
-  transform: scale(1.05); /* Agrandir légèrement au survol */
 }
 
 @media (max-width: 768px) {
@@ -247,21 +150,10 @@
   border-radius: 0 0 15px 15px;
 }
 
-.auto-card-title {
-  font-size: 1.7rem;
-  color: #007bff;
-  font-weight: bold;
-}
-
 .auto-card-subtitle {
   font-size: 1.1rem;
   color: #6c757d;
   font-weight: normal;
-}
-
-.auto-card-text {
-  font-size: 1.1rem;
-  color: #6c757d;
 }
 
 .auto-btn-custom {
@@ -283,10 +175,23 @@
   }
 }
 .subtitle-heading-container {
-  color: #f06532;
   padding: 70px 0;
-  border: #f06532 1px solid;
-  margin: 50px 150px;
+  margin: 0;
+}
+.subtitle-heading-container h2 {
+  /* Taille de police */
+  font-weight: bold;
+  /* Gras pour une meilleure visibilité */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  /* Dégradé du rouge-orange au jaune orangé */
+  -webkit-background-clip: text;
+  /* Applique le dégradé au texte */
+  color: transparent;
+  /* Rend le texte transparent pour que le dégradé soit visible */
+  display: inline;
+}
+.subtitle-heading-container p {
+  color: #fff;
 }
 @media (max-width: 768px) {
   .subtitle-heading-container {
@@ -317,19 +222,43 @@
   }
 }
 
-.subtitle-heading-container p {
-  font-size: 1.2rem;
-  color: #6c757d;
+.subtitle h3 {
+  font-weight: bold; /* Mettre le texte en gras pour plus de visibilité */
+  color: #fea975;
+  display: inline; /* Permet au texte de s'afficher en ligne */
 }
-@media (max-width: 768px) {
-  .subtitle-heading-container p {
-    font-size: 1rem;
-  }
+.subtitle p {
+  color: #fff;
 }
-@media (max-width: 480px) {
-  .subtitle-heading-container p {
-    font-size: 0.9rem;
-  }
+
+.orange-btn-custom {
+  background: #00bbf0; /* Dégradé de l'orange chaud au jaune orangé */
+  color: white; /* Couleur du texte */
+  border: none; /* Suppression des bordures */
+  padding: 12px 25px; /* Espacement interne */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Curseur en forme de main */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+.orange-btn-custom:hover {
+  transform: scale(1.05); /* Agrandissement du bouton au survol */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+
+.annotate_background {
+  background: radial-gradient(circle, #b63a0d, #001f3f);
+}
+
+/* Limiter le texte à 3 lignes et ajouter des points de suspension si le texte dépasse */
+.limited-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  /* Limite à 3 lignes */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body {
@@ -1006,10 +935,6 @@ a:focus {
 }
 .footer_section p a {
   color: inherit;
-}
-
-.subtitle {
-  color: #f06532;
 }
 
 /*# sourceMappingURL=style.css.map */
