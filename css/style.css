@@ -442,7 +442,6 @@
 }
 
 .process-section {
-  background-color: #f8f9fa;
   padding: 3rem 0;
 }
 .process-section .text-gradient {
@@ -1067,7 +1066,6 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
