@@ -83,12 +83,6 @@ p {
   object-position: center;
 }
 
-/* Appliquer une forme hexagonale à l'image */
-.polygon-img {
-  margin: 20px;
-  clip-path: polygon(50% 0%, 100% 30%, 80% 100%, 20% 100%, 0% 30%);
-}
-
 .blog-content .card {
   border: 1px solid #fff;
   background: transparent;
@@ -103,30 +97,6 @@ p {
   color: #fff;
 }
 
-.finance-card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.finance-card img {
-  border-radius: 15px;
-  object-fit: cover;
-  height: 100%;
-}
-
-.finance-card-body {
-  background-color: white;
-  padding: 20px;
-  border-radius: 0 0 15px 15px;
-}
-
-@media (max-width: 768px) {
-  .finance-heading-container h2 {
-    font-size: 2rem;
-  }
-}
 .subtitle-heading-container {
   padding: 70px 0;
   margin: 0;
