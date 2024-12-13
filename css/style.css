@@ -1168,16 +1168,44 @@ a:focus {
   color: inherit;
 }
 
-#why-choose-databoost {
-  background-color: #e6e9eb;
+.why-choose-databoost {
   text-align: center;
 }
-#why-choose-databoost .container-fluid {
+.why-choose-databoost .container-fluid {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+.why-choose-databoost .container-fluid .carousel .carousel-inner .carousel-item .cards {
+  height: 100%;
+  display: flex;
+}
+.why-choose-databoost .container-fluid .carousel .carousel-inner .carousel-item .cards .texte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.why-choose-databoost .container-fluid .carousel .carousel-inner .carousel-item .cards .texte .text-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}
+.why-choose-databoost .container-fluid .carousel .carousel-inner .carousel-item .cards .texte .text-left h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+.why-choose-databoost .container-fluid .carousel .carousel-inner .carousel-item .cards .texte .text-left p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
