@@ -831,43 +831,16 @@ a:focus {
 
 // General styling for the section
 #why-choose-databoost {
-  padding: 50px;
-  background-color: #f9f9f9;
+  .container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100vw;
+ 
+  }
+  background-color: $bg;
   text-align: center;
 }
 
-// Styling for the icon boxes
-.icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-// Styling for the icons
-.icon {
-  font-size: 36px;
-  color: #007bff;
-  margin-right: 15px;
-}
-
-// Styling for the text content
-.text {
-  max-width: 400px;
-  text-align: left;
-}
-
-.text h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.text p {
-  font-size: 16px;
-  color: #666;
-}
 
