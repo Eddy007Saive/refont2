@@ -17,7 +17,11 @@ $image-shadow: rgba(255, 255, 255, 0.6);
 $card-hover-shadow: rgba(0, 0, 0, 0.3);
 $subtitle : #fea975;
 $paragraph : #fff;
-$title : linear-gradient(45deg, #ff7e5f, #feb47b);
+$title : linear-gradient(60deg, #ff7e5f, #feb47b);
+$textColor: #333333;
+$textLight: #f5f5f5;
+$orange: #f06532;
+$bleu: #2a2e30;
 
 $blue-dark: #001f3f;   // Une teinte de bleu très sombre
 // $orange-light: #e07a5f; // Une teinte d'orange claire et chaleureuse
@@ -43,4 +47,6 @@ $background-site: radial-gradient(circle, $blue-dark, $orange-light);
     box-shadow: 0px 10px 20px $card-hover-shadow;
   }
 }
+
+
 
